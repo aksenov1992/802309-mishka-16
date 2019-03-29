@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Аксенов](https://up.htmlacademy.ru/adaptive/16/user/802309).
-* Наставник: `Неизвестно`.
+* Наставник: [Полина Катышева](https://htmlacademy.ru/profile/polina).
 
 ---
 
