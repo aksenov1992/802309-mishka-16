@@ -1,0 +1,33 @@
+@mixin list-reset {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+@mixin pseudo-content {
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
+  min-width: 320px;
+}
+
+@import "page-header.scss";
+@import "list-site.scss";
+@import "page-title.scss";
+@import "categories.scss";
+@import "product-week.scss";
+@import "button";
+@import "about-us.scss";
+@import "reviews.scss";
+@import "contact.scss";
+@import "page-footer.scss";
+@import "footer-social.scss";
+@import "copyright.scss";
+@import "modal-basket.scss";
+@import "product-card.scss";
+@import "production-process.scss";

@@ -1,0 +1,20 @@
+.copyright {
+  display: flex;
+  width: 182px;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+
+}
+
+.copyright__paragraph {
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: bold;
+}
+
+.copyright__link--image {
+  width: 27px;
+  height: 34px;
+  fill: #63d1bb;
+}
