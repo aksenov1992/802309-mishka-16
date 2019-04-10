@@ -44,12 +44,12 @@
   border: 1px solid #ececec;
 
   &--previous {
-  background: url(/img/icon-left-arrow.svg) no-repeat;
-  background-position: center;
+    background: url("/img/icon-left-arrow.svg") no-repeat;
+    background-position: center;
   }
 
   &--next {
-    background: url(/img/icon-right-arrow.svg) no-repeat;
+    background: url("/img/icon-right-arrow.svg") no-repeat;
     background-position: center;
   }
 }

@@ -7,11 +7,13 @@
   min-height: 374px;
   border: 1px solid #ececec;
   margin-bottom: 30px;
+
   &:hover {
-    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
+
   &:active {
-    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -46,10 +48,12 @@
 
 .product-card__basket--image {
   opacity: 0.2;
+
   &:hover {
     opacity: 1;
     fill: #63d1bb;
   }
+
   &:active {
     opacity: 0.3;
   }

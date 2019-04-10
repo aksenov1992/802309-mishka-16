@@ -27,7 +27,7 @@
 
   &::after {
     @include pseudo-content;
-    background: url(/img/icon-interior.svg);
+    background: url("/img/icon-interior.svg");
     width: 40px;
     height: 62px;
     opacity: 0.5;
@@ -38,13 +38,14 @@
 
 .categories__link--toys {
   background-color: #56c3b2;
+
   &::after {
-  @include pseudo-content;
-  background: url(/img/icon-toy.svg);
-  width: 60px;
-  height: 60px;
-  opacity: 0.5;
-  top: 25px;
-  left: 240px;
+    @include pseudo-content;
+    background: url("/img/icon-toy.svg");
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+    top: 25px;
+    left: 240px;
   }
 }

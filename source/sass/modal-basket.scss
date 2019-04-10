@@ -3,7 +3,7 @@
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   flex-direction: column;
   align-items: center;
   width: 320px;
@@ -11,7 +11,7 @@
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #c6c6c6;
-  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   z-index: 10;
 }
 
@@ -29,7 +29,7 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 28px;
 }
 
@@ -40,9 +40,6 @@
 }
 
 .custom-radio__radio-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
   position: absolute;
 }
 
@@ -63,16 +60,16 @@
   padding-top: 17px;
 
   &:hover {
-    border: 2px solid rgba(68,68,68,0.3);
+    border: 2px solid rgba(68, 68, 68, 0.3);
   }
 
   &:active {
-    border: 2px solid rgba(98,209,186,1);
+    border: 2px solid rgba(98, 209, 186, 1);
   }
 }
 
 .custom-radio__radio-input:checked + .custom-radio__box {
-  border: 2px solid rgba(99,209,187,1);
+  border: 2px solid rgba(99, 209, 187, 1);
 }
 
 .modal-basket__button-add {
