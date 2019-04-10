@@ -40,10 +40,10 @@
 }
 
 .custom-radio__radio-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
   position: absolute;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
 }
 
 .custom-radio__box {
@@ -53,7 +53,7 @@
   box-sizing: border-box;
   margin-right: 7px;
   background-color: #ffffff;
-  border: 2px solid rgba(68, 68, 68, 0.1);
+  border: 2px solid rgba(68,68,68,0.1);
   font-size: 17px;
   line-height: 16px;
   color: #444444;
@@ -61,16 +61,18 @@
   text-align: center;
   font-weight: bold;
   padding-top: 17px;
+
   &:hover {
-    border: 2px solid rgba(68, 68, 68, 0.3);
+    border: 2px solid rgba(68,68,68,0.3);
   }
+
   &:active {
-    border: 2px solid rgba(98 ,209 , 186, 1);
+    border: 2px solid rgba(98,209,186,1);
   }
 }
 
 .custom-radio__radio-input:checked + .custom-radio__box {
-  border: 2px solid rgba(99, 209, 187, 1);
+  border: 2px solid rgba(99,209,187,1);
 }
 
 .modal-basket__button-add {

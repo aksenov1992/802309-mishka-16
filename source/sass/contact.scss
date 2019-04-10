@@ -1,6 +1,7 @@
 .contact {
   width: 320px;
   margin: 0 auto;
+
     &__paragraph,
     &__email {
       font-size: 15px;
@@ -9,6 +10,7 @@
       padding: 0px;
       margin: 0px;
     }
+
     &__email {
       text-decoration: none;
       border-bottom: 1px solid #63d1bb;

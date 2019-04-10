@@ -25,44 +25,50 @@
   width: 251px;
   margin-bottom: 85px;
   position: relative;
+
   &--flowers::before {
     @include pseudo-content;
-    background: url(/img/icon-feature-flower.svg);
+    background: url("/img/icon-feature-flower.svg");
     width: 32px;
-    height: 37px;
+    height: 37px;x
     top: -50px;
   }
+
   &--money::before {
     @include pseudo-content;
-    background: url(/img/icon-feature-money.svg);
+    background: url("/img/icon-feature-money.svg");
     width: 47px;
     height: 27px;
     top: -50px;
   }
+
   &--heart::before {
     @include pseudo-content;
-    background: url(/img/icon-feature-heart.svg) no-repeat;
+    background: url("/img/icon-feature-heart.svg") no-repeat;
     width: 34px;
     height: 27px;
     top: -50px;
   }
+
   &--ball::before {
     @include pseudo-content;
-    background: url(/img/icon-feature-ball.svg);
+    background: url("/img/icon-feature-ball.svg");
     top: -50px;
     width: 35px;
     height: 34px;
   }
+
   &--rocket::before {
     @include pseudo-content;
-    background: url(/img/icon-feature-rocket.svg);
+    background: url("/img/icon-feature-rocket.svg");
     top: -50px;
     width: 55px;
     height: 23px;
   }
+
   &--gift::before {
     @include pseudo-content;
-    background: url(/img/icon-feature-gift.svg);
+    background: url("/img/icon-feature-gift.svg");
     top: -50px;
     width: 33px;
     height: 32px;
