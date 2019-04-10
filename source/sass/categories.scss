@@ -21,35 +21,35 @@
   text-decoration: none;
   color: #ffffff;
   &--interior {
-   background-color: #63d1bb;
+  background-color: #63d1bb;
   }
   &--toys {
-   background-color: #56c3b2;
+  background-color: #56c3b2;
   }
 }
 
 .categories__link--interior {
   background-color: #63d1bb;
   &::after {
-    @include pseudo-content;
-    background: url(/img/icon-interior.svg);
-    width: 40px;
-    height: 62px;
-    opacity: 0.5;
-    top: 25px;
-    left: 250px;
+  @include pseudo-content;
+  background: url(/img/icon-interior.svg);
+  width: 40px;
+  height: 62px;
+  opacity: 0.5;
+  top: 25px;
+  left: 250px;
   }
 }
 
 .categories__link--toys {
- background-color: #56c3b2;
- &::after {
-   @include pseudo-content;
-   background: url(/img/icon-toy.svg);
-   width: 60px;
-   height: 60px;
-   opacity: 0.5;
-   top: 25px;
-   left: 240px;
- }
+  background-color: #56c3b2;
+  &::after {
+  @include pseudo-content;
+  background: url(/img/icon-toy.svg);
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  top: 25px;
+  left: 240px;
+  }
 }
