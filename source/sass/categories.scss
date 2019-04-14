@@ -1,0 +1,50 @@
+.categories {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.categories__element {
+  @include list-reset;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.categories__link {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 200px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-decoration: none;
+  color: $color-white;
+
+  &--interior {
+    background-color: $seafoam-blue;
+
+    &::after {
+      @include pseudo-content;
+      background: url("../img/icon-interior.svg");
+      width: 40px;
+      height: 62px;
+      opacity: 0.5;
+      top: 25px;
+      right: 25px;
+    }
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+
+    &::after {
+      @include pseudo-content;
+      background: url("../img/icon-toy.svg");
+      width: 60px;
+      height: 60px;
+      opacity: 0.5;
+      top: 25px;
+      right: 24px;
+    }
+  }
+}

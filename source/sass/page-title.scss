@@ -1,0 +1,19 @@
+.page-title {
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+
+  &--index {
+    color: #010000;
+    width: 244px;
+  }
+
+  &--catalog {
+    width: 320px;
+    min-height: 177px;
+    background-color: #f1f1f1;
+    padding-top: 76px;
+    margin-bottom: 30px;
+  }
+}

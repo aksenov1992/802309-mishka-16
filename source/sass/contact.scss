@@ -1,0 +1,51 @@
+.contact {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contact__paragraph,
+.contact__email {
+  font-size: 15px;
+  line-height: 30px;
+  color: $greyish-brown;
+  padding: 0;
+  margin: 0;
+}
+
+.contact__email {
+  text-decoration: none;
+  border-bottom: 1px solid $seafoam-blue;
+}
+
+.contact__paragraph {
+  margin-right: 32px;
+}
+
+.contact__address {
+  font-size: 15px;
+  line-height: 30px;
+  color: $greyish-brown;
+  font-style: normal;
+  width: 150px;
+}
+
+.contact__title {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-left: 29px;
+}
+
+.contact__email-wrapper,
+.contact__address-wrapper {
+  display: flex;
+  margin-left: 29px;
+}
+
+.contact_map {
+  margin-bottom: 39px;
+}
+
+.contact_write {
+  margin-bottom: 39px;
+}
