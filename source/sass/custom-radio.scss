@@ -1,0 +1,32 @@
+.custom-radio__radio-input {
+  position: absolute;
+}
+
+.custom-radio__box {
+  display: block;
+  width: 82px;
+  height: 52px;
+  margin-right: 7px;
+  background-color: $color-white;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  font-size: 17px;
+  line-height: 16px;
+  color: $greyish-brown;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 17px;
+
+  &:hover,
+  &:focus {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border: 2px solid rgba(98, 209, 186, 1);
+  }
+}
+
+.custom-radio__radio-input:checked + .custom-radio__box {
+  border: 2px solid rgba(99, 209, 187, 1);
+}

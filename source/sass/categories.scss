@@ -13,26 +13,25 @@
 .categories__link {
   display: block;
   position: relative;
-  box-sizing: border-box;
   padding-left: 30px;
   padding-right: 200px;
-  padding-top: 27.5px;
-  padding-bottom: 27.5px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   text-decoration: none;
-  color: #ffffff;
+  color: $color-white;
 }
 
 .categories__link--interior {
-  background-color: #63d1bb;
+  background-color: $seafoam-blue;
 
   &::after {
     @include pseudo-content;
-    background: url("/img/icon-interior.svg");
+    background: url("../img/icon-interior.svg");
     width: 40px;
     height: 62px;
     opacity: 0.5;
     top: 25px;
-    left: 250px;
+    right: 25px;
   }
 }
 
@@ -41,11 +40,11 @@
 
   &::after {
     @include pseudo-content;
-    background: url("/img/icon-toy.svg");
+    background: url("../img/icon-toy.svg");
     width: 60px;
     height: 60px;
     opacity: 0.5;
     top: 25px;
-    left: 240px;
+    right: 24px;
   }
 }

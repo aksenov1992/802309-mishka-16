@@ -5,12 +5,12 @@
   align-items: center;
   width: 260px;
   min-height: 503px;
-  box-sizing: border-box;
   border: 1px solid #ececec;
-  background-color: #ffffff;
+  background-color: $color-white;
   margin-bottom: 58px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -30,7 +30,7 @@
 
   &::before {
     @include pseudo-content;
-    background-image: url("/img/icon-video.svg");
+    background-image: url("/..img/icon-video.svg");
     width: 32px;
     height: 32px;
     left: -80px;
@@ -40,7 +40,7 @@
 .production-process__text {
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: $greyish-brown;
   width: 183px;
   margin-top: 34px;
   margin-bottom: 29px;

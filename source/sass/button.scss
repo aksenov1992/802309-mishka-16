@@ -1,21 +1,21 @@
 .button {
   display: block;
-  box-sizing: border-box;
   width: 259px;
   min-height: 52px;
   text-decoration: none;
-  color: #444444;
+  color: $greyish-brown;
   text-transform: uppercase;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
-  border: 2px solid #444444;
+  border: 2px solid $greyish-brown;
   text-align: center;
   padding-top: 15px;
 
-  &:hover {
-    background-color: #444444;
-    color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: $greyish-brown;
+    color: $color-white;
   }
 
   &:active {

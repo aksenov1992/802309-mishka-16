@@ -8,8 +8,7 @@
   align-items: center;
   width: 320px;
   min-height: 336px;
-  box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: $color-white;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   z-index: 10;
@@ -28,7 +27,7 @@
 .modal-basket__paragraph {
   font-size: 15px;
   line-height: 30px;
-  color: #444444;
+  color: $greyish-brown;
   margin: 0;
   margin-bottom: 28px;
 }
@@ -39,47 +38,14 @@
   margin-bottom: 31px;
 }
 
-.custom-radio__radio-input {
-  position: absolute;
-}
-
-.custom-radio__box {
-  display: block;
-  width: 82px;
-  height: 52px;
-  box-sizing: border-box;
-  margin-right: 7px;
-  background-color: #ffffff;
-  border: 2px solid rgba(68, 68, 68, 0.1);
-  font-size: 17px;
-  line-height: 16px;
-  color: #444444;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  padding-top: 17px;
-
-  &:hover {
-    border: 2px solid rgba(68, 68, 68, 0.3);
-  }
-
-  &:active {
-    border: 2px solid rgba(98, 209, 186, 1);
-  }
-}
-
-.custom-radio__radio-input:checked + .custom-radio__box {
-  border: 2px solid rgba(99, 209, 187, 1);
-}
-
 .modal-basket__button-add {
   width: 260px;
   min-height: 52px;
-  background-color: #63d1bb;
+  background-color: $seafoam-blue;
   text-transform: uppercase;
   font-size: 17px;
   line-height: 16px;
-  color: #ffffff;
+  color: $color-white;
   font-weight: bold;
   border: none;
 }
