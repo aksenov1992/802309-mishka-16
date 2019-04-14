@@ -19,26 +19,25 @@
   padding-bottom: 27px;
   text-decoration: none;
   color: $color-white;
-}
 
-.categories__link--interior {
+  &--interior {
   background-color: $seafoam-blue;
 
-  &::after {
-    @include pseudo-content;
-    background: url("../img/icon-interior.svg");
-    width: 40px;
-    height: 62px;
-    opacity: 0.5;
-    top: 25px;
-    right: 25px;
+    &::after {
+      @include pseudo-content;
+      background: url("../img/icon-interior.svg");
+      width: 40px;
+      height: 62px;
+      opacity: 0.5;
+      top: 25px;
+      right: 25px;
+    }
   }
-}
 
-.categories__link--toys {
+  &--toys {
   background-color: #56c3b2;
 
-  &::after {
+    &::after {
     @include pseudo-content;
     background: url("../img/icon-toy.svg");
     width: 60px;
@@ -46,5 +45,6 @@
     opacity: 0.5;
     top: 25px;
     right: 24px;
+    }
   }
 }
