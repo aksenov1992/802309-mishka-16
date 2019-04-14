@@ -21,7 +21,7 @@
   color: $color-white;
 
   &--interior {
-  background-color: $seafoam-blue;
+    background-color: $seafoam-blue;
 
     &::after {
       @include pseudo-content;
@@ -35,16 +35,16 @@
   }
 
   &--toys {
-  background-color: #56c3b2;
+    background-color: #56c3b2;
 
     &::after {
-    @include pseudo-content;
-    background: url("../img/icon-toy.svg");
-    width: 60px;
-    height: 60px;
-    opacity: 0.5;
-    top: 25px;
-    right: 24px;
+      @include pseudo-content;
+      background: url("../img/icon-toy.svg");
+      width: 60px;
+      height: 60px;
+      opacity: 0.5;
+      top: 25px;
+      right: 24px;
     }
   }
 }
