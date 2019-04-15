@@ -3,6 +3,16 @@
   margin: 0 auto;
 }
 
+@media (min-width:$table-width) {
+  .categories {
+    width: 668px;
+  }
+
+  .categories__element {
+    display: flex;
+  }
+}
+
 .categories__element {
   @include list-reset;
   font-size: 19px;

@@ -17,3 +17,13 @@
     margin-bottom: 30px;
   }
 }
+
+@media (min-width:$table-width) {
+  .page-title {
+    @include size-title-table;
+
+    &--catalog {
+      width: 768px;
+    }
+  }
+}

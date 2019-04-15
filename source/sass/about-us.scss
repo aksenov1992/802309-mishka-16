@@ -72,3 +72,18 @@
     height: 32px;
   }
 }
+
+@media (min-width:$table-width) {
+  .about-us {
+    width: 668px;
+  }
+
+  .about-us__title {
+    @include size-title-table;
+  }
+
+  .about-us__list {
+    flex-wrap: wrap;
+    height: 450px;
+  }
+}

@@ -21,14 +21,14 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-  text-align: center;
+  margin-left: 29px;
 }
 
 .product-card__specification {
   font-size: 13px;
   line-height: 30px;
   color: $greyish-brown;
-  text-align: center;
+  margin-left: 29px;
 }
 
 .product-card__price-wrapper {
@@ -58,4 +58,26 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+@media (min-width:$table-width) {
+  .product-card {
+    width: 669px;
+    flex-direction: row;
+  }
+
+  .product-card__wrapper-specification {
+    margin-left: 32px;
+  }
+
+  .product-card__title,
+  .product-card__specification {
+    margin-left: 0;
+  }
+
+  .product-card__price-wrapper {
+    margin-top: 200px;
+    width: 268px;
+  }
+
 }

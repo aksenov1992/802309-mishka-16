@@ -11,6 +11,7 @@ html {
 $greyish-brown: #444444;
 $color-white: #ffffff;
 $seafoam-blue: #63d1bb;
+$table-width: 772px;
 
 
 body {
@@ -22,13 +23,14 @@ body {
 }
 
 @import "mixin.scss";
+@import "button";
 @import "page-header.scss";
+@import "main-nav.scss";
 @import "list-site.scss";
 @import "page-title.scss";
 @import "categories.scss";
 @import "product-week.scss";
 @import "table-specification.scss";
-@import "button";
 @import "about-us.scss";
 @import "reviews.scss";
 @import "contact.scss";

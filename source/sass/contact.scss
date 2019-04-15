@@ -49,3 +49,38 @@
 .contact_write {
   margin-bottom: 39px;
 }
+
+@media (min-width:$table-width) {
+  .contact {
+    width: 772px;
+  }
+
+  .contact__title {
+    @include size-title-table;
+    margin-left: 51px;
+  }
+
+  .contact__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact__address {
+    width: 221px;
+  }
+
+  .contact__email-wrapper {
+    align-items: flex-start;
+  }
+
+  .contact__paragraph,
+  .contact__email,
+  .contact__address {
+    font-size: 17px;
+  }
+
+  .contact_write {
+    margin: 0 auto;
+  }
+
+}

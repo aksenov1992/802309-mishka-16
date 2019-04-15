@@ -1,8 +1,7 @@
 .footer-social {
   @include list-reset;
-  display: flex;
   width: 141px;
-  margin: 0 auto;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
   margin-top: 25px;
 }

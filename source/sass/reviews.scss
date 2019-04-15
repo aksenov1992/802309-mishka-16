@@ -53,3 +53,37 @@
     background-position: center;
   }
 }
+
+@media (min-width:$table-width) {
+  .reviews {
+    width: 668px;
+    position: relative;
+  }
+
+  .reviews__title {
+    @include size-title-table;
+  }
+
+  .reviews-author__text {
+    width: 643px;
+    font-size: 17px;
+    margin: 0;
+  }
+
+  .reviews__author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .reviews__button {
+    border: none;
+  }
+
+  .reviews__write {
+    position: absolute;
+    width: 175px;
+    top: 0;
+    left: 450px;
+  }
+}

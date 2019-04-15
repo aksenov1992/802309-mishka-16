@@ -9,3 +9,8 @@
   content: "";
   position: absolute;
 }
+
+@mixin size-title-table {
+  font-size: 43px;
+  line-height: 50px;
+}
