@@ -18,7 +18,7 @@
   }
 }
 
-@media (min-width:$table-width) {
+@media (min-width: $table-width) {
   .page-title {
     @include size-title-table;
 

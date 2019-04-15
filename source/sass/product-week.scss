@@ -33,7 +33,7 @@
   margin-left: 67px;
 }
 
-@media (min-width:$table-width) {
+@media (min-width: $table-width) {
   .product-week {
     position: relative;
     width: 668px;
@@ -56,7 +56,7 @@
 
   .product-week__name {
     @include size-title-table;
-    margin: 0px;
+    margin: 0;
   }
 
   .product-week__description {
