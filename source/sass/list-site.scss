@@ -37,3 +37,35 @@
     color: rgba(0, 0, 0, 0.6);
   }
 }
+
+@media (min-width: $table-width) {
+  .list-site {
+    width: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .list-site__element {
+    width: 156px;
+    box-shadow: none;
+
+    /*&:nth-child(1) {
+      margin-right: 10px;*/
+    }
+
+  .list-site__link {
+    padding: 0;
+  }
+
+  .list-site__element--lens {
+    order: -2;
+    width: 85px;
+    font-size: 0;
+  }
+
+  .list-site__element--basket {
+    order: -1;
+    width: 315px;
+    padding-left: 76px;
+  }
+}

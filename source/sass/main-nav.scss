@@ -1,4 +1,9 @@
 @media (min-width: $table-width) {
+  .main-nav {
+    width: 400px;
+    margin: 0;
+  }
+
   .main-nav__toggle {
     display: none;
   }

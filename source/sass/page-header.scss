@@ -6,5 +6,8 @@
 @media (min-width: $table-width) {
   .page-header {
     width: 772px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
