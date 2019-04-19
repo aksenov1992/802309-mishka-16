@@ -21,3 +21,14 @@
     margin-bottom: 23px;
   }
 }
+
+@media (min-width: $table-width) {
+  .form-legend {
+    padding: 0;
+    margin-right: 130px;
+
+    &--color {
+      margin-top: 20px;
+    }
+  }
+}

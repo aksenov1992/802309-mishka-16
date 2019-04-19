@@ -82,3 +82,10 @@
     background-color: $seafoam-blue;
     }
 }
+
+@media (min-width: $table-width) {
+  .custom-radio--form {
+    font-size: 19px;
+    align-items: center;
+  }
+}

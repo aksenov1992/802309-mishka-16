@@ -10,9 +10,24 @@
 
 .page-form__paragraph {
   margin: 0 auto;
+  margin-bottom: 30px;
   width: 260px;
   font-size: 13px;
   line-height: 24px;
   color: $greyish-brown;
   font-weight: normal;
+}
+
+@media (min-width: $table-width) {
+  .page-form {
+    width: 768px;
+  }
+
+  .page-form__paragraph {
+    width: 612px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 61px;
+    margin-left: 51px;
+  }
 }

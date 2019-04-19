@@ -24,3 +24,40 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: $table-width) {
+  .form-fieldset {
+    min-width: 768px;
+    margin: 0;
+    border: none;
+
+    &--type {
+      margin-bottom: 30px;
+    }
+
+    &--color {
+      min-height: 304px;
+      background-color: #f1f1f1;
+    }
+  }
+
+  .form-fieldset__wrapper {
+    display: flex;
+    margin-left: 51px;
+
+    &--color {
+      margin-top: 50px;
+    }
+  }
+
+  .form-fieldset__list--color {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-fieldset__element--color {
+    min-width: 200px;
+    margin-right: 65px;
+    margin-bottom: 24px;
+  }
+}

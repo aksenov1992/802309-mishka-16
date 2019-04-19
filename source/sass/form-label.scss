@@ -41,3 +41,9 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $table-width) {
+  .form-label {
+    font-size: 19px;
+  }
+}

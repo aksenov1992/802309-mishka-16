@@ -24,7 +24,8 @@
     @include size-title-table;
     width: 497px;
 
-    &--catalog {
+    &--catalog,
+    &--form {
       width: 768px;
     }
   }

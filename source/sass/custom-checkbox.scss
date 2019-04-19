@@ -37,3 +37,9 @@
   top: 9px;
   left: 7px;
 }
+
+@media (min-width: $table-width) {
+  .custom-checkbox {
+    font-size: 19px;
+  }
+}

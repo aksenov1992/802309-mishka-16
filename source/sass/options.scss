@@ -13,3 +13,9 @@
   padding: 0;
   width: 260px;
 }
+
+@media (min-width: $table-width) {
+  .options {
+    width: 768px;
+  }
+}
