@@ -1,0 +1,43 @@
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.form-label__input {
+  outline: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  border-bottom: 2px solid $greyish-brown;
+  padding-bottom: 17px;
+  padding-top: 18px;
+  @include placeholder {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: $seafoam-blue-two;
+  }
+
+  &--telephone {
+    font-size: 19px;
+  }
+}
+
+.form-label__textarea {
+  width: 260px;
+  height: 142px;
+  outline: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  border: 2px solid $greyish-brown;
+  padding-left: 17px;
+  padding-top: 18px;
+  resize: none;
+  @include placeholder {
+    opacity: 0.3;
+  }
+}

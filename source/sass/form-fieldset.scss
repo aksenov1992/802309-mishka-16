@@ -1,0 +1,26 @@
+.form-fieldset {
+  padding: 0;
+  margin: 0 auto;
+  width: 260px;
+  border: none;
+  border-top: 1px solid $seafoam-blue;
+
+  &--type {
+    margin-bottom: 33px;
+  }
+}
+
+.form-fieldset__list {
+  @include list-reset;
+}
+
+.form-fieldset__element {
+
+  &--color {
+  margin-bottom: 22px;
+  }
+
+  &--type {
+    margin-bottom: 20px;
+  }
+}

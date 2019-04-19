@@ -1,0 +1,23 @@
+.form-legend {
+  line-height: 16px;
+  color: $seafoam-blue;
+  text-transform: uppercase;
+  padding: 0px;
+  padding-right: 24px;
+
+  &--type {
+    margin-bottom: 27px;
+  }
+
+  &--color {
+    margin-bottom: 22px;
+  }
+
+  &--name {
+    margin-bottom: 33px;
+  }
+
+  &--additionally {
+    margin-bottom: 23px;
+  }
+}
