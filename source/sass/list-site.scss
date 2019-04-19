@@ -2,8 +2,6 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  min-width: 320px;
-  color: #000000;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -11,8 +9,6 @@
 
 .list-site__element {
   position: relative;
-  width: 320px;
-  min-height: 79px;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
 
   &--lens svg,
@@ -31,6 +27,8 @@
   padding-left: 76px;
   padding-top: 27px;
   padding-bottom: 27px;
+  color: #000000;
+
 
   &:hover,
   &:focus {
@@ -40,13 +38,11 @@
 
 @media (min-width: $table-width) {
   .list-site {
-    width: 400px;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .list-site__element {
-    width: 156px;
     box-shadow: none;
 
     /*&:nth-child(1) {
@@ -61,11 +57,11 @@
     order: -2;
     width: 85px;
     font-size: 0;
+    margin-left: auto;
   }
 
   .list-site__element--basket {
     order: -1;
-    width: 315px;
     padding-left: 76px;
   }
 }

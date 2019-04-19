@@ -9,7 +9,9 @@
     width: 244px;
   }
 
-  &--catalog {
+  &--catalog,
+
+  &--form {
     width: 320px;
     min-height: 177px;
     background-color: #f1f1f1;
@@ -21,6 +23,7 @@
 @media (min-width: $table-width) {
   .page-title {
     @include size-title-table;
+    width: 497px;
 
     &--catalog {
       width: 768px;
