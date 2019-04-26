@@ -47,5 +47,39 @@
 @media (min-width: $table-width) {
   .form-label {
     font-size: 19px;
+
+    &--name,
+    &--surname,
+    &--patronymic {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &--telephone,
+    &--email,
+    &--additionally {
+      width: 100%;
+    }
+  }
+
+  .form-label__input {
+
+    &--name,
+    &--surname,
+    &--patronymic {
+      width: 100%;
+      margin-left: 26px;
+      padding-left: 17px;
+    }
+
+    &--telephone,
+    &--email {
+      padding-left: 17px;
+      background-color: #f1f1f1;
+    }
+  }
+
+  .form-label__textarea {
+    width: auto;
   }
 }

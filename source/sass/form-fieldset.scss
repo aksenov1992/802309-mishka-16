@@ -35,7 +35,13 @@
     }
 
     &--color {
+      margin-bottom: 67px;
       min-height: 304px;
+      background-color: #f1f1f1;
+    }
+
+    &--telephone,
+    &--email {
       background-color: #f1f1f1;
     }
   }
@@ -49,9 +55,16 @@
     }
   }
 
-  .form-fieldset__list--color {
+  .form-fieldset__list {
+
+    &--color {
     display: flex;
     flex-wrap: wrap;
+    }
+
+    &--name {
+      width: 100%;
+    }
   }
 
   .form-fieldset__element--color {
