@@ -24,6 +24,11 @@
   .page-header__logo {
     margin-left: 49px;
     margin-right: 209px;
+
+    & img {
+      width: 112px;
+      height: 46px;
+    }
   }
 
   .page-header__shiping {
@@ -43,6 +48,11 @@
 
   .page-header__logo {
     margin: 0;
+
+    & img {
+      width: 149px;
+      height: 72px;
+    }
   }
 
   .page-header__shiping {
