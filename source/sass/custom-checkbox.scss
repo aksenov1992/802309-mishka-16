@@ -40,4 +40,19 @@
   .custom-checkbox {
     font-size: 19px;
   }
+
+  .custom-checkbox__box {
+    width: 54px;
+    height: 52px;
+    margin-right: 27px;
+  }
+
+  .custom-checkbox__checkbox-input:checked + .custom-checkbox__box::before {
+    @include pseudo-content;
+    background: url("../img/icon-tick.svg") no-repeat;
+    width: 33px;
+    height: 22px;
+    top: 14px;
+    left: 10px;
+  }
 }

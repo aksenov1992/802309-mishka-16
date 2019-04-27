@@ -1,13 +1,35 @@
 .form-fieldset {
   padding: 0;
   margin: 0 auto;
-  width: 260px;
   border: none;
-  border-top: 1px solid $seafoam-blue;
 
   &--type {
-    margin-bottom: 33px;
+    margin-bottom: 12px;
   }
+
+  &--color {
+    margin-bottom: 15px;
+  }
+
+  &--name {
+    margin-bottom: 15px;
+  }
+
+  &--telephone {
+    margin-bottom: 15px;
+  }
+
+  &--email {
+    margin-bottom: 16px;
+  }
+
+  &--additionally {
+    margin-bottom: 16px;
+  }
+}
+
+.form-fieldset__wrapper {
+  margin-left: 30px;
 }
 
 .form-fieldset__list {
@@ -17,41 +39,75 @@
 .form-fieldset__element {
   &--color {
     margin-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &--type {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--name {
+    margin-bottom: 22px;
+
+    &:last-child {
+    margin-bottom: 0;
+    }
   }
 }
 
 @media (min-width: $table-width) {
   .form-fieldset {
-    min-width: 768px;
     margin: 0;
-    border: none;
 
     &--type {
-      margin-bottom: 30px;
+      margin-bottom: 52px;
     }
 
     &--color {
-      margin-bottom: 67px;
+      margin-bottom: 45px;
       min-height: 304px;
       background-color: #f1f1f1;
+    }
+
+    &--name {
+      margin-bottom: 50px;
     }
 
     &--telephone,
     &--email {
       background-color: #f1f1f1;
     }
+
+    &--email {
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+    }
+
+    &--additionally {
+      margin-bottom: 53px;
+    }
   }
 
   .form-fieldset__wrapper {
     display: flex;
-    margin-left: 51px;
+    margin-left: 50px;
 
     &--color {
       margin-top: 50px;
+    }
+
+    &--telephone {
+      margin-top: 45px;
+      margin-bottom: 18px;
     }
   }
 
@@ -67,9 +123,20 @@
     }
   }
 
-  .form-fieldset__element--color {
-    min-width: 200px;
-    margin-right: 65px;
-    margin-bottom: 24px;
+  .form-fieldset__element {
+
+    &--color {
+      min-width: 200px;
+      margin-right: 62px;
+      margin-bottom: 24px;
+    }
+
+    &--name {
+      margin-bottom: 19px;
+    }
   }
+}
+
+@media (min-width: $desktop-width) {
+
 }

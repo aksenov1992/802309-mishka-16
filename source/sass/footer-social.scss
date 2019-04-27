@@ -5,3 +5,9 @@
   justify-content: space-between;
   margin-top: 25px;
 }
+
+@media (min-width: $table-width) {
+  .footer-social {
+  margin-top: 15px;
+  }
+}

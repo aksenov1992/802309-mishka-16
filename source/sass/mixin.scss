@@ -15,6 +15,11 @@
   line-height: 50px;
 }
 
+@mixin size-title-desktop {
+  font-size: 53px;
+  line-height: 57px;
+}
+
 @mixin placeholder {
   &::-webkit-input-placeholder {
     @content;

@@ -1,24 +1,48 @@
 .form-legend {
+  position: relative;
   line-height: 16px;
   color: $seafoam-blue;
   text-transform: uppercase;
-  padding: 0;
-  padding-right: 24px;
+
+  &::after {
+    @include pseudo-content;
+    width: 198px;
+    height: 1px;
+    background-color: $seafoam-blue;
+    top: 8px;
+    right: 30px;
+  }
 
   &--type {
     margin-bottom: 27px;
   }
 
   &--color {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
 
   &--name {
-    margin-bottom: 33px;
+    margin-bottom: 29px;
   }
 
   &--additionally {
     margin-bottom: 23px;
+  }
+
+  &--telephone {
+    margin-bottom: 0;
+  }
+
+  &--email {
+    margin-bottom: 5px;
+
+    &:after {
+      width: 179px;
+    }
+  }
+
+  &--additionally {
+    margin-bottom: 25px;
   }
 }
 
@@ -27,17 +51,33 @@
     padding: 0;
     margin-right: 130px;
 
+    &::after {
+      display: none;
+    }
+
     &--color {
-      margin-top: 20px;
+      margin-top: 17px;
+      margin-right: 122px;
     }
 
     &--name {
-      margin-top: 20px;
+      margin-top: 22px;
+      margin-right: 124px
+    }
+
+    &--telephone {
+      margin-top: 22px;
+      margin-right: 110px;
     }
 
     &--email {
+      margin-top: 23px;
       width: 80px;
-      margin-right: 107px;
+      margin-right: 78px;
+    }
+
+    &--additionally {
+      margin-right: 127px;
     }
   }
 }
