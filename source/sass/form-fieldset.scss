@@ -48,7 +48,7 @@
   &--type {
     display: flex;
     flex-direction: row;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
     &:first-child {
       margin-bottom: 20px;
@@ -59,7 +59,7 @@
     margin-bottom: 22px;
 
     &:last-child {
-    margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
 }
@@ -112,10 +112,9 @@
   }
 
   .form-fieldset__list {
-
     &--color {
-    display: flex;
-    flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     &--name {
@@ -124,7 +123,6 @@
   }
 
   .form-fieldset__element {
-
     &--color {
       min-width: 200px;
       margin-right: 62px;
@@ -151,7 +149,6 @@
   }
 
   .form-fieldset {
-
     &--type {
       margin-bottom: 50px;
     }
@@ -166,9 +163,7 @@
   }
 
   .form-fieldset__element {
-
     &--type {
-
       &:first-child {
         margin-bottom: 22px;
       }

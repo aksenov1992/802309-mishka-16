@@ -99,7 +99,6 @@
   }
 
   .custom-radio__radio-input--form:checked + .custom-radio__box--form {
-
     &::before {
       @include pseudo-content;
       left: 50%;
