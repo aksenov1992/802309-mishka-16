@@ -14,3 +14,10 @@
   margin-left: 159px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer-social {
+    margin-left: 349px;
+    margin-right: 274px;
+  }
+}

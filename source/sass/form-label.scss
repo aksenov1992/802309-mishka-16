@@ -98,3 +98,13 @@
     width: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-label__input {
+    margin-right: 225px;
+  }
+
+  .form-label__textarea {
+    margin-right: 175px;
+  }
+}

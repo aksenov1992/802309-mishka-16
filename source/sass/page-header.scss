@@ -35,3 +35,17 @@
     left: 489px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-width: 1150px;
+  }
+
+  .page-header__logo {
+    margin: 0;
+  }
+
+  .page-header__shiping {
+    left: 868px
+  }
+}

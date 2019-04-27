@@ -138,5 +138,40 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-fieldset__wrapper {
+    margin-left: 111px;
 
+    &--type {
+      margin-left: 114px;
+    }
+
+    &--color {
+      margin-left: 109px;
+    }
+  }
+
+  .form-fieldset {
+
+    &--type {
+      margin-bottom: 50px;
+    }
+
+    &--color {
+      min-height: 228px;
+    }
+
+    &--additionally {
+      margin-bottom: 49px;
+    }
+  }
+
+  .form-fieldset__element {
+
+    &--type {
+
+      &:first-child {
+        margin-bottom: 22px;
+      }
+    }
+  }
 }
