@@ -1,6 +1,16 @@
 .page-header {
   width: 320px;
   margin: 0 auto;
+  position: relative;
+}
+
+.page-header__logo {
+  margin-left: 116px;
+  margin-right: 67px;
+}
+
+.page-header__shiping {
+  display: none;
 }
 
 @media (min-width: $table-width) {
@@ -9,5 +19,19 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .page-header__logo {
+    margin-left: 49px;
+    margin-right: 209px;
+  }
+
+  .page-header__shiping {
+    @include pseudo-content;
+    font-size: 15px;
+    line-height: 24px;
+    color: $greyish-brown;
+    top: 106px;
+    left: 489px;
   }
 }
