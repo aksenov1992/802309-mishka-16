@@ -1,0 +1,98 @@
+.form-legend {
+  position: relative;
+  line-height: 16px;
+  color: $seafoam-blue;
+  text-transform: uppercase;
+
+  &::after {
+    @include pseudo-content;
+    width: 198px;
+    height: 1px;
+    background-color: $seafoam-blue;
+    top: 8px;
+    right: 30px;
+  }
+
+  &--type {
+    margin-bottom: 27px;
+  }
+
+  &--color {
+    margin-bottom: 25px;
+  }
+
+  &--name {
+    margin-bottom: 29px;
+  }
+
+  &--additionally {
+    margin-bottom: 25px;
+  }
+
+  &--telephone {
+    margin-bottom: 0;
+  }
+
+  &--email {
+    margin-bottom: 5px;
+
+    &::after {
+      width: 179px;
+    }
+  }
+}
+
+@media (min-width: $table-width) {
+  .form-legend {
+    padding: 0;
+    margin-right: 130px;
+
+    &::after {
+      display: none;
+    }
+
+    &--color {
+      margin-top: 17px;
+      margin-right: 122px;
+    }
+
+    &--name {
+      margin-top: 22px;
+      margin-right: 124px;
+    }
+
+    &--telephone {
+      margin-top: 22px;
+      margin-right: 110px;
+    }
+
+    &--email {
+      margin-top: 23px;
+      width: 80px;
+      margin-right: 78px;
+    }
+
+    &--additionally {
+      margin-right: 127px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-legend {
+    margin-right: 74px;
+
+    &--color {
+      margin-right: 71px;
+    }
+
+    &--telephone {
+      margin-right: 56px;
+    }
+
+    &--email {
+      margin-top: 25px;
+      margin-right: 16px;
+    }
+  }
+}

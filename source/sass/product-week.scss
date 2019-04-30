@@ -32,3 +32,50 @@
   font-weight: bold;
   margin-left: 67px;
 }
+
+@media (min-width: $table-width) {
+  .product-week {
+    position: relative;
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-week__wrapper-title {
+    display: flex;
+    align-items: center;
+    width: 668px;
+  }
+
+  .product-week__title {
+    line-height: 17px;
+    width: 70px;
+    text-align: center;
+    margin-left: 150px;
+  }
+
+  .product-week__name {
+    @include size-title-table;
+    margin: 0;
+  }
+
+  .product-week__description {
+    font-size: 17px;
+    line-height: 30px;
+    width: 282px;
+  }
+
+  .product-week__price {
+    font-size: 20px;
+  }
+
+  .product-week img {
+    position: absolute;
+    left: 400px;
+    top: 80px;
+  }
+
+  .product-week__buy {
+    width: 292px;
+  }
+}

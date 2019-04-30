@@ -1,0 +1,64 @@
+.options {
+  min-width: 260px;
+}
+
+.options__notes {
+  width: 260px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 16px;
+  color: $greyish-brown;
+  font-weight: normal;
+  margin-bottom: 31px;
+}
+
+.options__notes-wrapper {
+  margin-bottom: 55px;
+}
+
+.options__button {
+  margin: 0 auto;
+  padding: 0;
+  width: 260px;
+}
+
+@media (min-width: $table-width) {
+  .options {
+    width: 768px;
+  }
+
+  .options__notes {
+    margin: 0;
+    width: 302px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .options__button {
+    width: 230px;
+    margin: 0;
+    line-height: 16px;
+  }
+
+  .options__notes-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .options__notes-wrapper {
+    margin-left: 225px;
+    margin-right: 225px;
+  }
+}

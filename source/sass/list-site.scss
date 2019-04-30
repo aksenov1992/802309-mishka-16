@@ -2,8 +2,6 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  min-width: 320px;
-  color: #000000;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -11,9 +9,13 @@
 
 .list-site__element {
   position: relative;
-  width: 320px;
-  min-height: 79px;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+
+  &--logo {
+    display: flex;
+    min-height: 79px;
+    align-items: center;
+  }
 
   &--lens svg,
   &--basket svg {
@@ -23,6 +25,11 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  &--new,
+  &--sale {
+    display: none;
+  }
 }
 
 .list-site__link {
@@ -31,9 +38,126 @@
   padding-left: 76px;
   padding-top: 27px;
   padding-bottom: 27px;
+  color: #000000;
+
 
   &:hover,
   &:focus {
     color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media (min-width: $table-width) {
+  .list-site {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .list-site__element {
+    box-shadow: none;
+    min-height: 88px;
+
+    &--logo {
+      order: -3;
+      margin-right: 0;
+    }
+
+    &--lens {
+      order: -2;
+      width: 84px;
+      font-size: 0;
+      border-right: 1px solid #ececec;
+      border-left: 1px solid #ececec;
+    }
+
+    &--basket {
+      order: -1;
+      padding-left: 76px;
+    }
+  }
+
+  .list-site__link {
+    padding: 0;
+
+    &--basket {
+      padding-top: 31px;
+      padding-bottom: 32px;
+      padding-right: 50px;
+      padding-left: 7px;
+    }
+
+    &--catalog {
+      margin-left: 51px;
+    }
+
+    &--catalog,
+    &--form {
+      font-size: 15px;
+      line-height: 24px;
+      margin-top: 18px;
+      margin-right: 37px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .list-site__element {
+    &--logo,
+    &--lens,
+    &--basket {
+      order: 0;
+    }
+
+    &--catalog {
+      order: -3;
+      border-right: 1px solid #ececec;
+    }
+
+    &--form {
+      order: -2;
+    }
+
+    &--logo {
+      order: -1;
+      margin: 0;
+      margin-right: 102px;
+    }
+
+    &--basket {
+      padding-left: 32px;
+    }
+
+    &--new,
+    &--sale {
+      display: block;
+    }
+  }
+
+  .list-site__link {
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 34px;
+    padding-right: 35px;
+
+    &--form {
+      padding-left: 34px;
+      padding-right: 75px;
+    }
+
+    &--lens {
+      font-size: 0;
+    }
+
+    &--new,
+    &--sale {
+      padding: 0;
+      margin-top: 18px;
+      margin-left: 49px;
+      margin-right: 13px;
+      font-size: 15px;
+    }
   }
 }

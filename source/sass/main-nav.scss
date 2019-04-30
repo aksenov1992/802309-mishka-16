@@ -1,0 +1,17 @@
+.main-nav__toggle {
+  border: none;
+  background: url("../img/icon-menu-close.svg");
+  background-color: #ffffff;
+  width: 21px;
+  height: 20px;
+}
+
+@media (min-width: $table-width) {
+  .main-nav {
+    margin: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

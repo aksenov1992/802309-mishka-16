@@ -9,11 +9,39 @@
     width: 244px;
   }
 
-  &--catalog {
+  &--catalog,
+  &--form {
     width: 320px;
     min-height: 177px;
     background-color: #f1f1f1;
-    padding-top: 76px;
-    margin-bottom: 30px;
+    padding-top: 71px;
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: $table-width) {
+  .page-title {
+    @include size-title-table;
+    width: 497px;
+    margin-bottom: 98px;
+
+    &--catalog,
+    &--form {
+      width: 768px;
+      margin-top: -88px;
+      padding-top: 94px;
+      margin-bottom: 121px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    @include size-title-desktop;
+
+    &--form {
+      width: auto;
+      margin-bottom: 200px;
+    }
   }
 }

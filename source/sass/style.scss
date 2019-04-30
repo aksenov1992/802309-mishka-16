@@ -11,6 +11,9 @@ html {
 $greyish-brown: #444444;
 $color-white: #ffffff;
 $seafoam-blue: #63d1bb;
+$seafoam-blue-two: #62d1ba;
+$table-width: 768px;
+$desktop-width: 1150px;
 
 
 body {
@@ -22,13 +25,19 @@ body {
 }
 
 @import "mixin.scss";
+@import "button.scss";
+@import "page-form.scss";
+@import "options.scss";
+@import "form-fieldset.scss";
+@import "form-legend.scss";
+@import "form-label.scss";
 @import "page-header.scss";
+@import "main-nav.scss";
 @import "list-site.scss";
 @import "page-title.scss";
 @import "categories.scss";
 @import "product-week.scss";
 @import "table-specification.scss";
-@import "button";
 @import "about-us.scss";
 @import "reviews.scss";
 @import "contact.scss";
@@ -37,5 +46,6 @@ body {
 @import "copyright.scss";
 @import "modal-basket.scss";
 @import "custom-radio.scss";
+@import "custom-checkbox.scss";
 @import "product-card.scss";
 @import "production-process.scss";

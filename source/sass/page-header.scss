@@ -1,4 +1,61 @@
 .page-header {
   width: 320px;
   margin: 0 auto;
+  position: relative;
+}
+
+.page-header__logo {
+  margin-left: 116px;
+  margin-right: 67px;
+}
+
+.page-header__shiping {
+  display: none;
+}
+
+@media (min-width: $table-width) {
+  .page-header {
+    width: 772px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .page-header__logo {
+    margin-left: 49px;
+    margin-right: 209px;
+
+    & img {
+      width: 112px;
+      height: 46px;
+    }
+  }
+
+  .page-header__shiping {
+    @include pseudo-content;
+    font-size: 15px;
+    line-height: 24px;
+    color: $greyish-brown;
+    top: 106px;
+    left: 489px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-width: 1150px;
+  }
+
+  .page-header__logo {
+    margin: 0;
+
+    & img {
+      width: 149px;
+      height: 72px;
+    }
+  }
+
+  .page-header__shiping {
+    left: 868px;
+  }
 }

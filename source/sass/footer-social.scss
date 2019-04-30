@@ -1,8 +1,23 @@
 .footer-social {
   @include list-reset;
-  display: flex;
   width: 141px;
-  margin: 0 auto;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
   margin-top: 25px;
+}
+
+@media (min-width: $table-width) {
+  .footer-social {
+    margin-top: 0;
+    align-items: flex-end;
+    margin-right: 84px;
+    margin-left: 159px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-social {
+    margin-left: 349px;
+    margin-right: 274px;
+  }
 }
