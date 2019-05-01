@@ -63,11 +63,12 @@
 @media (min-width: $table-width) {
   .product-card {
     width: 669px;
+    min-height: 334px;
     flex-direction: row;
   }
 
   .product-card__wrapper-specification {
-    margin-left: 32px;
+    margin-left: 26px;
   }
 
   .product-card__title,
@@ -75,8 +76,30 @@
     margin-left: 0;
   }
 
+  .product-card__title {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  .product-card__specification {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .product-card__price {
+    font-size: 17px;
+    padding-top: 5px;
+  }
+
   .product-card__price-wrapper {
-    margin-top: 200px;
+    margin-top: 175px;
+    margin-left: 6px;
     width: 268px;
+  }
+
+  .product-card__image {
+    width: 334px;
+    height: 334px;
   }
 }

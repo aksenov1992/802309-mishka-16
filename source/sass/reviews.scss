@@ -1,6 +1,7 @@
 .reviews {
-  width: 320px;
+  width: 260px;
   margin: 0 auto;
+  margin-bottom: 87px;
 }
 
 .reviews__title {
@@ -8,13 +9,19 @@
   line-height: 30px;
   color: #000000;
   font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .reviews-author__text {
-  width: 255px;
+  width: 256px;
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+  margin-bottom: 26px;
+}
+
+.reviews__wrapper-name {
+  margin-bottom: 29px;
 }
 
 .reviews-author__name {
@@ -22,12 +29,15 @@
   line-height: 24px;
   color: #000000;
   font-weight: bold;
+  margin: 0;
+  margin-bottom: 3px;
 }
 
 .reviews-author__instagram-nick {
   font-size: 17px;
   line-height: 30px;
   color: #444444;
+  margin: 0;
 }
 
 .reviews__button-wrapper {
@@ -37,9 +47,9 @@
 
 .reviews__button {
   display: block;
-  box-sizing: border-box;
   width: 130px;
   height: 52px;
+  font-size: 18px;
   background-color: #ffffff;
   border: 1px solid #ececec;
 
@@ -58,32 +68,97 @@
   .reviews {
     width: 668px;
     position: relative;
+    margin-bottom: 166px;
+
+    &::after {
+      @include pseudo-content;
+      width: 771px;
+      bottom: -112px;
+      height: 23px;
+      left: -51px;
+      background-image: url(../img/bg-zigzag-line.svg);
+    }
   }
 
   .reviews__title {
     @include size-title-table;
+    margin-bottom: 48px;
+    margin-left: -5px;
   }
 
   .reviews-author__text {
     width: 643px;
     font-size: 17px;
     margin: 0;
+    margin-bottom: 55px;
   }
 
   .reviews__author {
+    width: 651px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
+  .reviews-author__name {
+    font-size: 18px;
+  }
+
+  .reviews__button-wrapper {
+    margin-top: 13px;
+    width: 137px;
+    justify-content: space-between;
+  }
+
   .reviews__button {
     border: none;
+    width: 50px;
+    height: 26px;
   }
 
   .reviews__write {
     position: absolute;
     width: 175px;
-    top: 0;
-    left: 450px;
+    top: 1px;
+    left: 493px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 700px;
+    margin-bottom: 297px;
+
+    &::after {
+    width: 1050px;
+    bottom: -156px;
+    left: -178px;
+    }
+  }
+
+  .reviews__title {
+    @include size-title-desktop;
+  }
+
+  .reviews__write {
+    top: 8px;
+    left: 700px;
+  }
+
+  .reviews__author {
+    width: 856px;
+  }
+
+  .reviews-author__text {
+    width: 770px;
+    margin-bottom: 39px;
+  }
+
+  .reviews-author__name {
+    font-size: 17px;
+  }
+
+  .reviews__button-wrapper {
+    margin-top: 8px;
   }
 }

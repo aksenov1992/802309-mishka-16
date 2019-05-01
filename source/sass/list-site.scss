@@ -74,6 +74,11 @@
       order: -1;
       padding-left: 76px;
     }
+
+    &--catalog,
+    &--form {
+      z-index: 1;
+    }
   }
 
   .list-site__link {
@@ -130,6 +135,7 @@
     &--new,
     &--sale {
       display: block;
+      z-index: 1;
     }
   }
 

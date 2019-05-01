@@ -7,6 +7,8 @@
   &--index {
     color: #010000;
     width: 244px;
+    padding-top: 88px;
+    margin-bottom: 122px;
   }
 
   &--catalog,
@@ -25,12 +27,27 @@
     width: 497px;
     margin-bottom: 98px;
 
+    &--index {
+      padding-top: 154px;
+      margin-bottom: 374px;
+    }
+
+    &::after {
+      @include pseudo-content;
+      background: url("../img/bg-zigzag-fill.svg");
+      width: 768px;
+      height: 14px;
+      top: 211px;
+      }
+
     &--catalog,
     &--form {
+      position: relative;
       width: 768px;
       margin-top: -88px;
-      padding-top: 94px;
-      margin-bottom: 121px;
+      padding-top: 96px;
+      padding-bottom: 79px;
+      margin-bottom: 80px;
     }
   }
 }
@@ -38,6 +55,11 @@
 @media (min-width: $desktop-width) {
   .page-title {
     @include size-title-desktop;
+    width: 613px;
+
+    &--index {
+      margin-bottom: 359px;
+    }
 
     &--form {
       width: auto;

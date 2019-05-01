@@ -56,7 +56,11 @@
       <h1 class="page-title page-title--catalog">Каталог товаров</h1>
       <section class="page-catalog__items">
         <section class="product-card">
-          <img class="product-card__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Игрушка зайчки">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/photo-hare-desktop@1x.jpg" width="316" height="462">
+            <source media="(min-width:768px)" srcset="img/photo-hare-tablet@1x.jpg" width="334" height="334">
+            <img class="product-card__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Игрушка зайчки">
+          </picture>
           <div class="product-card__wrapper-specification">
             <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
             <p class="product-card__specification">Рост 30 см, вес 200 г</p>
