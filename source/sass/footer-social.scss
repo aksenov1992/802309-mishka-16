@@ -3,13 +3,14 @@
   width: 141px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   margin-top: 25px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: $table-width) {
   .footer-social {
-    margin-top: 0;
-    align-items: flex-end;
+    margin-top: 32px;
     margin-right: 84px;
     margin-left: 159px;
   }

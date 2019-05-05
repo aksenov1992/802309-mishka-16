@@ -1,13 +1,14 @@
 .about-us {
-  width: 320px;
+  width: 260px;
   margin: 0 auto;
+  margin-bottom: 55px;
 }
 
 .about-us__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-  margin-bottom: 88px;
+  margin-bottom: 85px;
 }
 
 .about-us__list {
@@ -21,15 +22,20 @@
 
 .about-us__advantages {
   width: 251px;
-  margin-bottom: 85px;
+  margin-bottom: 83px;
   position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &--flowers::before {
     @include pseudo-content;
     background: url("../img/icon-feature-flower.svg");
     width: 32px;
     height: 37px;
-    top: -50px;
+    top: -55px;
+    left: 8px;
   }
 
   &--money::before {
@@ -45,15 +51,17 @@
     background: url("../img/icon-feature-heart.svg") no-repeat;
     width: 34px;
     height: 27px;
-    top: -50px;
+    top: -48px;
+    left: 7px;
   }
 
   &--ball::before {
     @include pseudo-content;
     background: url("../img/icon-feature-ball.svg");
-    top: -50px;
     width: 35px;
     height: 34px;
+    left: 3px;
+    top: -51px;
   }
 
   &--rocket::before {
@@ -62,28 +70,51 @@
     top: -50px;
     width: 55px;
     height: 23px;
+    left: -5px;
   }
 
   &--gift::before {
     @include pseudo-content;
     background: url("../img/icon-feature-gift.svg");
-    top: -50px;
     width: 33px;
     height: 32px;
+    left: 3px;
+    top: -52px;
   }
 }
 
 @media (min-width: $table-width) {
   .about-us {
     width: 668px;
+    margin-bottom: 50px;
   }
 
   .about-us__title {
     @include size-title-table;
+    margin-bottom: 103px;
+    margin-left: -5px;
   }
 
   .about-us__list {
     flex-wrap: wrap;
-    height: 450px;
+    height: 465px;
+    min-width: 590px;
+  }
+
+  .about-us__advantages {
+    font-size: 20px;
+    line-height: 22px;
+    width: 295px;
+    margin-bottom: 111px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 700px;
+  }
+
+  .about-us__title {
+    @include size-title-desktop;
   }
 }

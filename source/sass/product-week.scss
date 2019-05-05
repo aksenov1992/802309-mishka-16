@@ -1,13 +1,15 @@
 .product-week {
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .product-week__name {
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-top: 27px;
+  margin-bottom: 5px;
 }
 
 .product-week__title {
@@ -23,6 +25,8 @@
   line-height: 24px;
   color: $greyish-brown;
   width: 249px;
+  margin-top: 23px;
+  margin-bottom: 19px;
 }
 
 .product-week__price {
@@ -31,6 +35,8 @@
   color: $greyish-brown;
   font-weight: bold;
   margin-left: 67px;
+  margin-top: 19px;
+  margin-bottom: 26px;
 }
 
 @media (min-width: $table-width) {
@@ -39,27 +45,43 @@
     width: 668px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 118px;
+
+    &::after {
+      @include pseudo-content;
+      width: 771px;
+      bottom: -71px;
+      height: 23px;
+      left: -51px;
+      background-image: url("../img/bg-zigzag-line.svg");
+    }
   }
 
   .product-week__wrapper-title {
     display: flex;
+    width: 640px;
     align-items: center;
-    width: 668px;
+    justify-content: space-between;
+    margin-bottom: 50px;
   }
 
   .product-week__title {
     line-height: 17px;
     width: 70px;
     text-align: center;
-    margin-left: 150px;
+    margin-top: 5px;
+    margin-left: -5px;
   }
 
   .product-week__name {
     @include size-title-table;
     margin: 0;
+    margin-left: -5px;
   }
 
   .product-week__description {
+    margin: 0;
+    margin-bottom: 35px;
     font-size: 17px;
     line-height: 30px;
     width: 282px;
@@ -67,9 +89,11 @@
 
   .product-week__price {
     font-size: 20px;
+    margin-left: 70px;
+    margin-bottom: 34px;
   }
 
-  .product-week img {
+  .product-week__picture {
     position: absolute;
     left: 400px;
     top: 80px;
@@ -77,5 +101,45 @@
 
   .product-week__buy {
     width: 292px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-week {
+    width: 1150px;
+    margin-bottom: 155px;
+
+    &::after {
+      width: 1050px;
+      bottom: -96px;
+      left: 50px;
+    }
+  }
+
+  .product-week__wrapper-title {
+    flex-direction: row-reverse;
+    margin-left: 101px;
+    width: 646px;
+  }
+
+  .product-week__name {
+    @include size-title-desktop;
+  }
+
+  .product-week__description {
+    margin-left: 226px;
+    margin-bottom: 48px;
+  }
+
+  .product-week__picture {
+    left: 575px;
+  }
+
+  .product-week__price {
+    margin-left: 298px;
+  }
+
+  .product-week__buy {
+    margin-left: 225px;
   }
 }

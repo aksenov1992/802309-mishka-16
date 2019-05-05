@@ -4,14 +4,30 @@
   font-size: 15px;
   line-height: 20px;
   color: $greyish-brown;
+  width: 260px;
+  height: 117px;
+  margin-bottom: 30px;
 }
 
 .table-specification td {
   border-bottom: 1px solid #f1f1f1;
+  padding-right: 25px;
 }
 
 @media (min-width: $table-width) {
   .table-specification {
-    width: 292px;
+    width: 291px;
+    margin-bottom: 40px;
+
+    & td {
+      padding-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .table-specification {
+    margin-left: 225px;
+    margin-bottom: 93px;
   }
 }
