@@ -76,7 +76,7 @@
       bottom: -112px;
       height: 23px;
       left: -51px;
-      background-image: url(../img/bg-zigzag-line.svg);
+      background-image: url("../img/bg-zigzag-line.svg");
     }
   }
 
@@ -130,9 +130,9 @@
     margin-bottom: 297px;
 
     &::after {
-    width: 1050px;
-    bottom: -156px;
-    left: -178px;
+      width: 1050px;
+      bottom: -156px;
+      left: -178px;
     }
   }
 

@@ -65,6 +65,11 @@
     width: 669px;
     min-height: 334px;
     flex-direction: row;
+    margin-bottom: 52px;
+  }
+
+  .product-card picture {
+    height: 334px;
   }
 
   .product-card__wrapper-specification {
@@ -77,6 +82,7 @@
   }
 
   .product-card__title {
+    width: 232px;
     font-size: 20px;
     margin: 0;
     margin-top: 25px;
@@ -96,10 +102,55 @@
     margin-top: 175px;
     margin-left: 6px;
     width: 268px;
+
+    &--bowl-toys {
+      margin-top: 151px;
+    }
   }
 
   .product-card__image {
     width: 334px;
     height: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    margin: 0;
+    width: 316px;
+    min-height: 659px;
+    flex-direction: column;
+  }
+
+  .product-card picture {
+    height: 462px;
+  }
+
+  .product-card img {
+    width: 316px;
+    height: 462px;
+  }
+
+  .product-card__price-wrapper {
+    margin-top: 0;
+    margin-left: 0;
+    width: 255px;
+    align-items: flex-end;
+
+    &--bowl-toys {
+      margin-top: 0;
+    }
+  }
+
+  .product-card__price {
+    margin-bottom: 0;
+  }
+
+  .product-card__specification {
+    margin-bottom: 38px;
+
+    &--bowl-toys{
+      margin-bottom: 14px;
+    }
   }
 }

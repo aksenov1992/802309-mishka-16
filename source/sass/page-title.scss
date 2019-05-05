@@ -32,14 +32,6 @@
       margin-bottom: 374px;
     }
 
-    &::after {
-      @include pseudo-content;
-      background: url("../img/bg-zigzag-fill.svg");
-      width: 768px;
-      height: 14px;
-      top: 211px;
-      }
-
     &--catalog,
     &--form {
       position: relative;
@@ -48,6 +40,14 @@
       padding-top: 96px;
       padding-bottom: 79px;
       margin-bottom: 80px;
+
+      &::after {
+        @include pseudo-content;
+        background: url("../img/bg-zigzag-fill.svg");
+        width: 768px;
+        height: 14px;
+        top: 211px;
+      }
     }
   }
 }
@@ -61,9 +61,19 @@
       margin-bottom: 359px;
     }
 
-    &--form {
-      width: auto;
-      margin-bottom: 200px;
+    &--form,
+    &--catalog {
+      min-width: 1150px;
+      padding-bottom: 99px;
+      margin-bottom: 125px;
+
+      &::after {
+        width: 1150px;
+        top: 238px;
+      }
+    }
+    &--catalog {
+      margin-bottom: 131px;
     }
   }
 }
