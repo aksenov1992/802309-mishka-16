@@ -1,24 +1,45 @@
 .copyright {
   display: flex;
-  width: 182px;
-  justify-content: space-between;
-  align-items: center;
+  width: 260px;
+  padding-top: 19px;
+  border-top: 1px solid #ececec;
 }
 
 .copyright__paragraph {
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
+  margin: 0;
+  padding-top: 8px;
+  margin-left: 38px;
+  margin-right: 23px;
 }
 
-.copyright__link--image {
-  width: 27px;
-  height: 34px;
+.copyright__link__image {
+  width: 41px;
+  height: 40px;
   fill: $seafoam-blue;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $table-width) {
   .copyright {
     margin: 0;
+    padding: 0;
+    border: none;
+    margin-right: 11px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
   }
 }

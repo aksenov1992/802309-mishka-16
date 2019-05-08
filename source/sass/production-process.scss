@@ -24,17 +24,44 @@
   font-size: 17px;
   line-height: 24px;
   width: 126px;
-  margin-left: 91px;
-  margin-top: 29px;
-  margin-bottom: 26px;
+  margin-left: 49px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 
   &::before {
     @include pseudo-content;
     background-image: url("../img/icon-video.svg");
     width: 32px;
     height: 32px;
-    left: -80px;
+    top: 6px;
+    left: -56px;
   }
+}
+
+.production-process picture {
+  position: relative;
+}
+
+.production-process picture::after {
+  @include pseudo-content;
+  width: 101px;
+  height: 77px;
+  background: url("../img/icon-play.svg") no-repeat;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.production-process picture:hover::after {
+  width: calc(101px + 20%);
+  height: calc(77px + 20%);
+  background-size: contain;
+}
+
+.production-process picture:active::after {
+  width: calc(101px - 20%);
+  height: calc(77px - 20%);
+  background-size: contain;
 }
 
 .production-process__text {
@@ -42,8 +69,8 @@
   line-height: 24px;
   color: $greyish-brown;
   width: 183px;
-  margin-top: 34px;
-  margin-bottom: 29px;
+  margin-top: 22px;
+  margin-bottom: 25px;
 }
 
 .production-process__button {
@@ -58,13 +85,13 @@
 
   .production-process__title,
   .production-process__text {
-    width: 581px;
+    width: 586px;
   }
 
   .production-process__title {
     font-size: 20px;
-    margin-left: 124px;
-    margin-top: 32px;
+    margin-left: 130px;
+    margin-top: 37px;
     margin-bottom: 0;
 
     &::before {
@@ -87,6 +114,7 @@
 
   .production-process picture {
     order: -1;
+    height: 455px;
   }
 
   .production-process img {
@@ -101,7 +129,7 @@
     position: relative;
     width: 1049px;
     min-height: 455px;
-    margin-bottom: 105px;
+    margin-bottom: 103px;
   }
 
   .production-process__title {
@@ -120,7 +148,7 @@
     width: 223px;
     margin-left: auto;
     margin-right: 67px;
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   .production-process__button {

@@ -44,6 +44,14 @@
   }
 }
 
+.form-label--additionally:hover .form-label__textarea {
+  border-color: $seafoam-blue-two;
+}
+
+.form-label--additionally:active .form-label__textarea {
+  border-color: $seafoam-blue-two;
+}
+
 @media (min-width: $table-width) {
   .form-label {
     font-size: 19px;

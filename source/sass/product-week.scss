@@ -95,8 +95,10 @@
 
   .product-week__picture {
     position: absolute;
-    left: 400px;
-    top: 80px;
+    width: 333px;
+    height: 404px;
+    left: 334px;
+    top: 106px;
   }
 
   .product-week__buy {
@@ -133,6 +135,10 @@
 
   .product-week__picture {
     left: 575px;
+    width: 525px;
+    height: 636px;
+    top: -52px;
+    z-index: -1;
   }
 
   .product-week__price {

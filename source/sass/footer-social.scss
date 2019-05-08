@@ -5,20 +5,28 @@
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 25px;
-  margin-bottom: 32px;
+  margin-bottom: 23px;
+}
+
+.footer-social__link {
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $table-width) {
   .footer-social {
-    margin-top: 32px;
-    margin-right: 84px;
     margin-left: 159px;
+    margin-right: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer-social {
-    margin-left: 349px;
-    margin-right: 274px;
+    margin-left: 327px;
   }
 }
