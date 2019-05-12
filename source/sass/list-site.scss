@@ -45,6 +45,17 @@
   &:focus {
     color: rgba(0, 0, 0, 0.6);
   }
+
+  &--lens:hover svg,
+  &--basket:hover svg {
+    fill: $seafoam-blue;
+    opacity: 1;
+  }
+
+  &--lens:active svg,
+  &--basket:active svg {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $table-width) {

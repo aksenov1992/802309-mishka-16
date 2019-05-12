@@ -10,6 +10,14 @@
 
 .page-footer__logo {
   display: none;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $table-width) {
@@ -22,11 +30,17 @@
 
   .page-footer__logo {
     display: block;
+    margin-left: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
     width: $desktop-width;
+  }
+
+  .page-footer__logo {
+    width: 145px;
+    margin-left: 30px;
   }
 }

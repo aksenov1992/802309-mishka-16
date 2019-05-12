@@ -15,6 +15,14 @@
 .contact__email {
   text-decoration: none;
   border-bottom: 1px solid $seafoam-blue;
+
+  &:hover {
+    color: $seafoam-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contact__paragraph {
@@ -62,9 +70,20 @@
   }
 
   .contact__title {
+    position: relative;
+
     @include size-title-table;
     margin-left: 48px;
     margin-bottom: 50px;
+
+    &::after {
+      @include pseudo-content;
+      background: url("../img/icon-flag.svg");
+      width: 47px;
+      height: 81px;
+      top: -15px;
+      right: 55px;
+    }
   }
 
   .contact__wrapper {
@@ -90,6 +109,8 @@
   }
 
   .contact_map {
+    width: 768px;
+    height: 457px;
     margin-bottom: 50px;
   }
 
@@ -109,6 +130,11 @@
   .contact__title {
     @include size-title-desktop;
     margin-left: 170px;
+
+    &::after {
+      top: -8px;
+      left: -107px;
+    }
   }
 
   .contact__wrapper {
@@ -119,6 +145,8 @@
 
   .contact_map {
     position: absolute;
+    width: 525px;
+    height: 457px;
     top: -78px;
     left: 524px;
   }

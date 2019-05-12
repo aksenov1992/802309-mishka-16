@@ -43,7 +43,7 @@
     background: url("../img/icon-feature-money.svg");
     width: 47px;
     height: 27px;
-    top: -50px;
+    top: -53px;
   }
 
   &--heart::before {
@@ -86,7 +86,7 @@
 @media (min-width: $table-width) {
   .about-us {
     width: 668px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .about-us__title {
@@ -97,7 +97,7 @@
 
   .about-us__list {
     flex-wrap: wrap;
-    height: 465px;
+    height: 400px;
     min-width: 590px;
   }
 
@@ -106,6 +106,10 @@
     line-height: 22px;
     width: 295px;
     margin-bottom: 111px;
+
+    &--heart {
+      margin-bottom: 0;
+    }
   }
 }
 

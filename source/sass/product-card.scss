@@ -17,10 +17,17 @@
   }
 }
 
+.product-card picture {
+  height: 195px;
+}
+
 .product-card__title {
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  width: 200px;
+  margin: 0;
+  margin-top: 25px;
   margin-left: 29px;
 }
 
@@ -29,6 +36,8 @@
   line-height: 30px;
   color: $greyish-brown;
   margin-left: 29px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .product-card__price-wrapper {
@@ -36,14 +45,25 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  margin-bottom: 28px;
   width: 204px;
   border-top: 1px solid #ececec;
+  padding-top: 20px;
 }
 
 .product-card__price {
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
+  margin: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product-card__basket--image {
@@ -95,7 +115,7 @@
 
   .product-card__price {
     font-size: 17px;
-    padding-top: 5px;
+    padding-top: 2px;
   }
 
   .product-card__price-wrapper {
