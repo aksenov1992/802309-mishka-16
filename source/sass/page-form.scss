@@ -1,6 +1,5 @@
 .page-form {
   display: block;
-  width: 320px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -21,21 +20,18 @@
 
 @media (min-width: $table-width) {
   .page-form {
-    width: 768px;
   }
 
   .page-form__paragraph {
-    width: 612px;
+    width: 669px;
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 57px;
-    margin-left: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-form {
-    width: $desktop-width;
   }
 
   .page-form__paragraph {

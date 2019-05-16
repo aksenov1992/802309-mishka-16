@@ -49,3 +49,23 @@
   font-weight: bold;
   border: none;
 }
+
+@media (min-width: $table-width) {
+  .modal-basket {
+    width: 566px;
+  }
+
+  .modal-basket__title {
+    width: 354px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal-basket__paragraph {
+    font-size: 17px;
+  }
+
+  .modal-basket__button-add {
+    width: 350px;
+  }
+}

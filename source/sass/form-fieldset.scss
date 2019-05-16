@@ -29,7 +29,8 @@
 }
 
 .form-fieldset__wrapper {
-  margin-left: 30px;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .form-fieldset__list {
@@ -69,7 +70,7 @@
     margin: 0;
 
     &--type {
-      margin-bottom: 52px;
+      margin-bottom: 51px;
     }
 
     &--color {
@@ -99,7 +100,7 @@
 
   .form-fieldset__wrapper {
     display: flex;
-    margin-left: 50px;
+    width: 667px;
 
     &--color {
       margin-top: 50px;
@@ -115,6 +116,7 @@
     &--color {
       display: flex;
       flex-wrap: wrap;
+      min-width: 500px;
     }
 
     &--name {
@@ -127,6 +129,10 @@
       min-width: 200px;
       margin-right: 62px;
       margin-bottom: 24px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
     }
 
     &--name {
@@ -137,15 +143,7 @@
 
 @media (min-width: $desktop-width) {
   .form-fieldset__wrapper {
-    margin-left: 111px;
-
-    &--type {
-      margin-left: 114px;
-    }
-
-    &--color {
-      margin-left: 109px;
-    }
+    width: 930px;
   }
 
   .form-fieldset {
@@ -162,10 +160,19 @@
     }
   }
 
+  .form-fieldset__list--name {
+    width: 698px;
+  }
   .form-fieldset__element {
     &--type {
       &:first-child {
         margin-bottom: 22px;
+      }
+    }
+    &--color {
+
+      &:nth-child(2n) {
+      margin-right: 62px;
       }
     }
   }

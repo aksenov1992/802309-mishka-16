@@ -13,7 +13,7 @@
 
   &--catalog,
   &--form {
-    width: 320px;
+    width: 100%;
     min-height: 177px;
     background-color: #f1f1f1;
     padding-top: 71px;
@@ -28,10 +28,10 @@
 @media (min-width: $table-width) {
   .page-title {
     @include size-title-table;
-    width: 497px;
     margin-bottom: 98px;
 
     &--index {
+      width: 497px;
       padding-top: 154px;
       margin-bottom: 374px;
     }
@@ -39,7 +39,6 @@
     &--catalog,
     &--form {
       position: relative;
-      width: 768px;
       margin-top: -88px;
       padding-top: 96px;
       padding-bottom: 79px;
@@ -48,9 +47,18 @@
       &::after {
         @include pseudo-content;
         background: url("../img/bg-zigzag-fill.svg");
-        width: 768px;
+        width: 100%;
         height: 14px;
         top: 211px;
+      }
+    }
+
+    &--form {
+      padding-bottom: 83px;
+      margin-bottom: 70px;
+
+      &::after {
+        top: 215px;
       }
     }
   }
@@ -67,12 +75,11 @@
 
     &--form,
     &--catalog {
-      min-width: 1150px;
+      width: 100%;
       padding-bottom: 99px;
       margin-bottom: 125px;
 
       &::after {
-        width: 1150px;
         top: 238px;
       }
     }

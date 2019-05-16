@@ -85,6 +85,11 @@
 }
 
 @media (min-width: $table-width) {
+  .custom-radio__box {
+      width: 112px;
+      height: 52px;
+  }
+
   .custom-radio--form {
     width: 253px;
     font-size: 19px;

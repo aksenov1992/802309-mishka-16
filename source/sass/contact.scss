@@ -1,5 +1,4 @@
 .contact {
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -38,11 +37,17 @@
 }
 
 .contact__title {
+  width: 260px;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  margin-left: 29px;
   margin-bottom: 25px;
+}
+
+.contact__wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .contact__email-wrapper,
@@ -65,15 +70,14 @@
 
 @media (min-width: $table-width) {
   .contact {
-    width: 772px;
     margin-bottom: 57px;
   }
 
   .contact__title {
     position: relative;
+    width: 678px;
 
     @include size-title-table;
-    margin-left: 48px;
     margin-bottom: 50px;
 
     &::after {
@@ -82,14 +86,14 @@
       width: 47px;
       height: 81px;
       top: -15px;
-      right: 55px;
+      right: 9px;
     }
   }
 
   .contact__wrapper {
+    width: 725px;
     display: flex;
     flex-direction: row;
-    margin-left: 23px;
     margin-bottom: 18px;
   }
 
@@ -109,7 +113,6 @@
   }
 
   .contact_map {
-    width: 768px;
     height: 457px;
     margin-bottom: 50px;
   }
@@ -122,14 +125,14 @@
 
 @media (min-width: $desktop-width) {
   .contact {
+    width: $desktop-width;
     position: relative;
-    width: 1050px;
     margin-bottom: 105px;
   }
 
   .contact__title {
     @include size-title-desktop;
-    margin-left: 170px;
+    width: 710px;
 
     &::after {
       top: -8px;
@@ -139,7 +142,7 @@
 
   .contact__wrapper {
     flex-direction: column;
-    margin-left: 145px;
+    width: 760px;
     margin-bottom: 49px;
   }
 
@@ -153,6 +156,6 @@
 
   .contact_write {
     margin: 0;
-    margin-left: 175px;
+    margin-left: 225px;
   }
 }

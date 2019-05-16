@@ -90,6 +90,11 @@
       left: 0;
       background: url("../img/bg-zigzag-line.svg") no-repeat;
     }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/review@2x.jpg") no-repeat;
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
