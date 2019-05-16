@@ -6,18 +6,6 @@
   height: 20px;
 }
 
-.main-nav--opened {
-  display: block;
-}
-
-.main-nav--closed {
-  display: none;
-}
-
-.main-nav--nojs {
-  display: block;
-}
-
 @media (min-width: $table-width) {
   .main-nav {
     margin: 0;

@@ -30,6 +30,15 @@
   &--sale {
     display: none;
   }
+
+  &--nojs,
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
 }
 
 .list-site__link {
