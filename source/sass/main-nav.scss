@@ -1,9 +1,17 @@
 .main-nav__toggle {
   border: none;
-  background: url("../img/icon-menu-close.svg");
   background-color: #ffffff;
   width: 21px;
   height: 20px;
+
+  &--closed {
+
+    background: url("../img/icon-menu-close.svg");
+    }
+  &--opened {
+    height: 14px;
+    background: url("../img/icon-menu-open.svg");
+  }
 }
 
 @media (min-width: $table-width) {

@@ -1,3 +1,7 @@
+.page-catalog {
+  position: relative;
+}
+
 @media (min-width: $desktop-width) {
   .page-catalog__items {
     display: flex;

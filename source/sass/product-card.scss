@@ -17,12 +17,20 @@
   }
 }
 
+.product-card__link-image {
+  width: 260px;
+  height: 195px;
+}
+
 .product-card picture {
   height: 195px;
 }
 
 .product-card__title {
+  display: block;
   font-size: 17px;
+  color: #000000;
+  text-decoration: none;
   line-height: 24px;
   font-weight: bold;
   width: 200px;
@@ -88,6 +96,11 @@
     margin-bottom: 52px;
   }
 
+  .product-card__link-image {
+    width: 334px;
+    height: 334px;
+  }
+
   .product-card picture {
     height: 334px;
   }
@@ -140,6 +153,11 @@
     width: 316px;
     min-height: 659px;
     flex-direction: column;
+  }
+
+  .product-card__link-image {
+    width: 316px;
+    height: 462px;
   }
 
   .product-card picture {

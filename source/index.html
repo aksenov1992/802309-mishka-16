@@ -19,7 +19,7 @@
                 <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
               </picture>
             </a>
-            <button class="main-nav__toggle" type="button"></button>
+            <button class="main-nav__toggle main-nav__toggle--opened main-nav__toggle--closed" type="button"></button>
           </li>
           <li class="list-site__element list-site__element--catalog list-site__element--nojs list-site__element--closed list-site__element--opened">
             <a class="list-site__link list-site__link--catalog" href="catalog.html">Каталог товаров</a>
@@ -70,29 +70,30 @@
           <p class="product-week__name">Вязаные корзинки</p>
           <h2 class="product-week__title">товар недели</h2>
         </div>
-          <p class="product-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="product-week__specification table-specification">
-            <tr>
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
-          <picture>
-            <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x" width="525" height="636">
-            <source media="(min-width:768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x" width="303" height="404">
-            <img class="product-week__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Фото товара">
-          </picture>
-          <p class="product-week__price">Цена: 990 руб.</p>
-          <a class="button product-week__buy" href="#">заказать</a>
-        </section>
+        <p class="product-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="product-week__specification table-specification">
+          <tr>
+            <td>Цвет:</td>
+            <td>«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td>Диаметр:</td>
+            <td>25 см</td>
+          </tr>
+          <tr>
+            <td>Высота:</td>
+            <td>15 см</td>
+          </tr>
+        </table>
+        <picture>
+          <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x" width="525" height="636">
+          <source media="(min-width:768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x" width="303" height="404">
+          <img class="product-week__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Фото товара">
+        </picture>
+        <p class="product-week__price">Цена: 990 руб.</p>
+        <a class="button product-week__buy" href="#">заказать</a>
+      </section>
+      <div class="modal-basket__overlay modal-basket__overlay--show"></div>
         <section class="modal-basket">
           <h2 class="modal-basket__title">добавить в корзину</h2>
           <p class="modal-basket__paragraph">Выберите размер:</p>

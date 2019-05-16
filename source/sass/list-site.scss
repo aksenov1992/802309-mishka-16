@@ -99,6 +99,10 @@
     &--form {
       z-index: 1;
     }
+
+    &--closed {
+      display: block;
+    }
   }
 
   .list-site__link {
