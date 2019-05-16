@@ -163,16 +163,17 @@
   .form-fieldset__list--name {
     width: 698px;
   }
+
   .form-fieldset__element {
     &--type {
       &:first-child {
         margin-bottom: 22px;
       }
     }
-    &--color {
 
-      &:nth-child(2n) {
-      margin-right: 62px;
+    &--color {
+        &:nth-child(2n) {
+        margin-right: 62px;
       }
     }
   }
